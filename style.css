@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #fafaff;
+    color: #333;
+}
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    background: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* HERO */
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(to bottom right, #ece9ff, #fdfaff);
+}
+
+.hero h1{
+    font-size: 45px;
+}
+
+.hero h1 span{
+    color: #6a5acd;
+}
+
+.hero p{
+    margin: 15px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.btn{
+    display: inline-block;
+    background: #6a5acd;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* SECTIONS */
+section{
+    padding: 80px 40px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* ABOUT */
+.about p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* SERVICES */
+.service-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card{
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* PROJECTS */
+.project-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    background: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* CONTACT */
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea{
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #ece9ff;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .hero h1{
+        font-size: 32px;
+    }
+}
